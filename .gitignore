@@ -1,0 +1,42 @@
+### Sportradar Project Custom Rules ###
+# Backend klasörü altındaki build ve target dosyalarını engelle
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.env.properties
+backend/*.iml
+backend/*.iws
+backend/*.ipr
+
+# Hassas verileri içeren dosyayı engelle (Kesinlikle yüklenmemeli)
+.env.properties
+backend/.env.properties
+
+### STS (Spring Tool Suite) ###
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+backend/.idea/
+*.iws
+*.iml
+*.ipr
+out/
+backend/out/
+
+### VS Code ###
+.vscode/
+backend/.vscode/
+
+### Operating System Files ###
+.DS_Store
+Thumbs.db
+
+### Maven ###
+backend/mvnw
+backend/mvnw.cmd
