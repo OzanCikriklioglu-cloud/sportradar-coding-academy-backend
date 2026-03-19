@@ -17,6 +17,7 @@
 - [Windows](#windows-via-docker)
 - [Features](#-features)
 - [Decisions & Assumptions](#-decisions--assumptions)
+- [ERD Diagram](#-erd-diagram)
 
 ---
 
@@ -207,5 +208,9 @@ Single HTML file served by Spring Boot's static folder. Keeps the setup simple w
 Used the JSON file provided by Sportradar as reference and extended it with events from January to June 2026 to make the calendar more interesting to explore.
 
 ---
+
+## ERD Diagram
+
+![ERD Diagram](database/erd_diagram.png)
 
 *Built with ❤️ for Sportradar Coding Academy 2026*
