@@ -1,0 +1,82 @@
+# AI Reflection — Sportradar Coding Academy 2026
+
+## My Approach
+
+Before writing a single line of code, I spent time thinking about the architecture.
+I sketched out the database schema on paper first which tables I needed, how they
+would relate to each other, and how to structure the Spring Boot layers cleanly.
+I already had experience with Spring Boot from personal projects, so I had a clear
+picture of what the controller, service and repository layers should look like before
+I even opened my IDE.
+
+Only after I had that mental model ready did I bring AI into the process.
+
+---
+
+## How I Used AI
+
+My approach to AI was simple: I used it as a tool to speed up things I already
+understood, not as a replacement for thinking.
+
+For example, when I was writing the JPA repository queries, I already knew I needed
+JOIN FETCH to avoid the N+1 problem. I had dealt with this before. I used AI to
+help me write the exact JPQL syntax faster, but the decision of why to use JOIN FETCH
+was already mine before I asked.
+
+Same with the frontend. I knew what I wanted a dark sportif theme, an interactive
+calendar, filter buttons, a detail page. I gave AI very specific prompts describing
+the exact layout and behavior I had in mind. The result was close to what I imagined,
+and I tweaked the parts that weren't right.
+
+When bugs appeared like the Hibernate "unsaved transient instance" error when
+creating events I first tried to understand the error myself. Once I had a theory
+about what was wrong, I used AI to confirm it and find the cleanest fix.
+
+That's the pattern I followed throughout: think first, then use AI to move faster.
+
+---
+
+## What AI Actually Did
+
+To be honest about it:
+
+- AI helped me write boilerplate code faster (entity classes, controller mappings)
+- AI helped me with Docker and docker-compose configuration, which I was less familiar with
+- AI helped me structure the README and this reflection document
+- AI suggested the healthcheck configuration in docker-compose, which I wouldn't have
+  thought of immediately and it turned out to be important
+
+What AI did NOT do:
+
+- AI did not design the database schema I did that based on the requirements and the
+  JSON data provided by Sportradar
+- AI did not decide the project structure I planned that before starting
+- AI did not debug for me  I read error messages myself and formed hypotheses first
+- AI did not write the unit tests logic I understood what each test was asserting
+  and why it mattered
+
+---
+
+## What I Learned About Using AI
+
+The biggest thing I realized during this project is that AI is only as useful as the
+person using it. If you don't understand what you're building, AI will produce code
+that looks right but breaks in ways you can't diagnose.
+
+The times AI helped me most were the times I came to it with a clear question.
+"I have this Hibernate error, here is what I think is causing it, can you confirm?"
+is a much better prompt than "fix my code." The first one teaches you something.
+The second one just gives you a black box.
+
+I think this is what responsible AI usage looks like in software development 
+using it to accelerate a process you already understand, not to skip the understanding
+part entirely.
+
+---
+
+## Final Note
+
+This project was genuinely fun to build. The combination of designing a proper
+relational schema, building a clean REST API, and seeing it all come together in
+a frontend that actually looks good  that was satisfying. AI made the journey faster.
+But the decisions, the architecture, and the debugging were mine.
